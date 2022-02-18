@@ -1,0 +1,16 @@
+[Unit]
+Description=This is a template Unit file
+#Wants=
+#Before=
+#After=network-online.target
+#Requires=
+#Conflicts=
+#AssertPathExists=
+
+[Service]
+#Type=simple
+ExecStart=/path/to/your/app
+User=someUser
+
+[Install]
+WantedBy=multi-user.target
