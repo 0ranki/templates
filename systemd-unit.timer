@@ -1,0 +1,13 @@
+[Unit]
+Description=Run foo weekly and on boot
+
+[Timer]
+#OnBootSec=15min
+#OnUnitActiveSec=1w
+OnCalendar=weekly
+#OnCalendar=Mon..Fri 22:30
+#OnCalendar=Sat,Sun 20:00
+#Persistent=true
+
+[Install]
+WantedBy=timers.target
